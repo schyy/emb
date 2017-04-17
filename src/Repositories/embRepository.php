@@ -57,7 +57,7 @@ class embRepository implements embRepositoryContract
 
         $emb = pluginApp(emb::class);
 
-        $emb->taskDescription = $data['taskDescription'];
+        $emb->taskDescription = $data['email'];
 
         $emb->userId = $this->getCurrentContactId();
 
@@ -81,7 +81,7 @@ class embRepository implements embRepositoryContract
         /**
          * @var ToDo[] $toDoList
          */
-        $embList = $database->query(emb::class)->where('Id', '=', $id)->get();
+        $embList = $database->query(emb::class)->where('id', '=', $id)->get();
         return $embList;
     }
 }
