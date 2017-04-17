@@ -1,0 +1,9 @@
+{
+  "name":"E-Mail Benachrichtigung",
+  "description":"E-Mail Benachrichtigung an den Kunden wenn Artikel verfügbar",
+  "namespace":"emb",
+  "author":"Schyy",
+  "type":"template",
+  "serviceProvider":"emb\\Providers\\embServiceProvider",
+  "runOnBuild":["emb\\Migrations\\CreateEmbTable"]
+}
