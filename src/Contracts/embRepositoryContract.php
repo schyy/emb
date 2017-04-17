@@ -23,5 +23,5 @@ interface embRepositoryContract
      *
      * @return ToDo[]
      */
-    public function getToDoList(): array;
+    public function getEmbList(): array;
 }
